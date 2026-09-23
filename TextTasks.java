@@ -1,9 +1,12 @@
+package laba1;
+
 import java.util.Scanner;
 
 
 
-public class  TextTasks {
-    public static void main(String[] args) {
+public class TextTasks {
+    public static void run(String input) {
+        System.out.println("Обработка строки: " + input);
         Scanner s = new Scanner(System.in);
         System.out.println("vvedite chto nibyd");
         String string= s.nextLine();
