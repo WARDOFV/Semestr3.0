@@ -1,6 +1,8 @@
+package laba1;
 
-public class  SeriesCalculator {
-    public static void main(String[] args) {
+public class SeriesCalculator{
+    public static void run() {
+        String[] args;
         double sum = 0;
         int n= 2;
         int count=0;
@@ -12,13 +14,15 @@ public class  SeriesCalculator {
                 break;
             }
             sum += ryda;
-            LastN = n;      // Запоминаем последний добавленный n
-            count++;        // Увеличиваем счетчик
-            n++;            // Переходим к следующему n
+            LastN = n;
+            count++;
+            n++;
         }
 
         System.out.println(sum);
         System.out.println(LastN);
         System.out.println(count);
     }
+
+
 }
