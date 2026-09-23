@@ -1,6 +1,7 @@
+package laba1;
 
 public class  QuadraticEquation {
-    public static void main(String[] args) {
+    public static void run(String arg, String arg1, String arg2, String[] args) {
         double a = Double.parseDouble(args[1]);
         double b = Double.parseDouble(args[2]);
         double c = Double.parseDouble(args[3]);
@@ -17,3 +18,4 @@ public class  QuadraticEquation {
         }
     }
 }
+
