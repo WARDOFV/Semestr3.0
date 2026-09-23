@@ -1,21 +1,33 @@
 package laba1;
 
-import java.util.Scanner;
+public class  palindrome {
+    public static void run(String arg){
+        String text = arg;
+        int left = 0;
+        int right = text.length() - 1;
+
+        while (left < right) {
+            char charLeft = text.charAt(left);
+            char charRight = text.charAt(right);
 
 
+            if (!Character.isLetterOrDigit(charLeft)) {
+                left++;
+            }
 
-public class TextTasks {
-    public static void run(String input) {
-        System.out.println("Обработка строки: " + input);
-        Scanner s = new Scanner(System.in);
-        System.out.println("vvedite chto nibyd");
-        String string= s.nextLine();
-        String result = "";
-        for(int i = string.length()-1; i>=0; i--) {
-            result += string.charAt(i);
+            else if (!Character.isLetterOrDigit(charRight)) {
+                right--;
+            }
+
+            else {
+                if (Character.toLowerCase(charLeft) != Character.toLowerCase(charRight)) {
+                    System.out.println("false");
+                    return;
+                }
+                left++;
+                right--;
+            }
         }
-        System.out.println(result);
-
-
+        System.out.println("true");
     }
 }
