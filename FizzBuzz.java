@@ -1,5 +1,8 @@
+package laba1;
+
 public class  FizzBuzz{
-    public static void main(String [] args){
+    public static void run(){
+        String [] args;
         for(int i =0;i<=500;i++){
             if(i%5==0 && i%7==0) {
                 System.out.println("fizzbuzz");
